@@ -64,4 +64,18 @@ function init() {
 	const wait = txtElement.getAttribute('data-wait');
 	// Init TypeWriter
 	new TypeWriter(txtElement, words, wait);
+	adapt_navbar();
 }
+
+function adapt_navbar() {
+	var win = $(this);
+	if (win.width() < 450) {
+		$('#mainNav').removeClass('fixed-top');
+		$('#mainNav').addClass('navbar-static-top');
+	} else {
+		$('#mainNav').removeClass('navbar-static-top');
+		$('#mainNav').addClass('fixed-top');
+	}
+}
+
+$(window).on('resize', adapt_navbar);
