@@ -427,7 +427,8 @@ pre code{
 	padding-right:15px;
 	padding-left:15px;
 	margin-right:auto;
-	margin-left:auto
+	margin-left:auto;
+	position: relative;
 }
 @media (min-width:576px){
 	.container{
@@ -3148,7 +3149,7 @@ input[type=button].btn-block,input[type=reset].btn-block,input[type=submit].btn-
 	flex-wrap:wrap;
 	align-items:center;
 	justify-content:space-between;
-	padding:.5rem 1rem
+	padding:.5rem 1rem;
 }
 .navbar>.container,.navbar>.container-fluid{
 	display:flex;
@@ -7932,9 +7933,8 @@ form .row:first-child .floating-label-form-group{
 	height: 100vh
 }
 .center-vert{
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%)
+	position: relative;
+	transform: translateY(20%);
 }
 .image1{
 	background-image: url(../img/header-bg.jpg);
